@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
+  scrollbar-width: none;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+p,
+span,
+a {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  background-color: #02020c;
+}
+
+/* Typography */
+.heading-156px {
+  font-family: "bebas neue";
+  font-size: 156px;
+  line-height: 90%;
+  letter-spacing: 2px;
+}
+.heading-28px-l {
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}
+.heading-28px-sb {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}
+
+.paragraph-20px-r {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}
+.paragraph-16px-r {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}
+.paragraph-20px-sb {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+
+.paragraph-44px-i {
+  font-size: 44px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 140%;
+  letter-spacing: 0.3px;
+}
+.heading-200px {
+  font-family: "bebas neue";
+  font-size: 200px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+
+/* Button */
+.btn-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #f39239;
+  color: #121316;
+}
+
+/* navbar */
+.navbar-wrapper {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 672px;
+  height: 60px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(400px);
+  border-radius: 12px;
+  z-index: 1000;
+  cursor: pointer;
+  gap: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo .avatar {
+  width: 44px;
+  height: 44px;
+  margin-right: 4px;
+}
+
+.navbar-logo span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: rubik Doodle Shadow;
+  color: #ffffff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  font-size: 13px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #969699;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #ff8c42;
+}

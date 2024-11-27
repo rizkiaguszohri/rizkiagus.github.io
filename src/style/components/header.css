@@ -1,0 +1,139 @@
+.header {
+  padding-top: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 752px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 8px 8px 16px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(242, 245, 245, 0.65);
+}
+
+.header-main img {
+  display: block;
+  cursor: pointer;
+}
+
+.header-logo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-logo .divider {
+  width: 1px;
+  height: 24px;
+  background-color: #d1d1d1; /* Replace with the intended color */
+}
+
+.header-menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #333333; /* Replace with the intended color */
+}
+
+.header-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.header-menu-item:hover {
+  background-color: #f0f0f0; /* Replace with the intended color */
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+.header-status-indicator {
+  width: 6px;
+  height: 6px;
+  background-color: #35cb32;
+  border-radius: 50%;
+  border: 2px solid #ccf2cc;
+}
+
+.header-icon {
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.header-icon i {
+  font-size: 24px;
+}
+
+.nav {
+  position: fixed;
+  top: 88px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: none;
+}
+
+.nav-main {
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(242, 245, 245, 0.65);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-item {
+  padding: 16px;
+  text-decoration: none;
+  color: #333333; /* Replace with the intended color */
+  border-radius: 8px;
+}
+
+.nav-menu-item:hover {
+  background-color: #f0f0f0; /* Replace with the intended color */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-logo .divider {
+    display: none;
+  }
+
+  .header-menu,
+  .header-action {
+    display: none;
+  }
+
+  .header-icon {
+    display: inline-flex;
+  }
+}
